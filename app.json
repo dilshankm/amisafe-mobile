@@ -2,27 +2,59 @@
   "expo": {
     "name": "am-i-safe",
     "slug": "am-i-safe",
+    "scheme": "am-i-safe",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+    "icon": "assets/icons/logo.png",
+    "updates": {
+      "fallbackToCacheTimeout": 0
     },
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kodithuwakku.amisafe",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "config": {
+        "googleMapsApiKey": "AIzaSyBW-YSFLY5pDqSZvERUHkh5ItVGQVZOGUk"
+      }
     },
     "android": {
+      "package": "com.kodithuwakku.amisafe",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "assets/icons/logo.png",
+        "backgroundColor": "#1D70B8"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "assets/icons/logo.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "root": "app"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icons/logo.png",
+          "color": "#1D70B8"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a710eb60-f255-4316-9559-b593459d7544"
+      }
     }
   }
 }
