@@ -9,7 +9,6 @@ This is the **React Native frontend** for the AmISafe platform — a mobile safe
 * View nearby crime incidents using interactive maps
 * Predict likely crime types based on location and time
 * Clean and responsive UI using NativeWind (Tailwind CSS for React Native)
-* Firebase authentication and cloud messaging integration
 
 ---
 
